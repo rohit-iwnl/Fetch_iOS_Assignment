@@ -11,9 +11,10 @@
 		B67AE7962B9AB5FF007DC30B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67AE7952B9AB5FF007DC30B /* ContentView.swift */; };
 		B67AE7982B9AB600007DC30B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B67AE7972B9AB600007DC30B /* Assets.xcassets */; };
 		B67AE79B2B9AB600007DC30B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B67AE79A2B9AB600007DC30B /* Preview Assets.xcassets */; };
-		B67AE7A52B9AB600007DC30B /* Fetch_TakeHome_AssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67AE7A42B9AB600007DC30B /* Fetch_TakeHome_AssignmentTests.swift */; };
-		B67AE7AF2B9AB600007DC30B /* Fetch_TakeHome_AssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67AE7AE2B9AB600007DC30B /* Fetch_TakeHome_AssignmentUITests.swift */; };
-		B67AE7B12B9AB600007DC30B /* Fetch_TakeHome_AssignmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67AE7B02B9AB600007DC30B /* Fetch_TakeHome_AssignmentUITestsLaunchTests.swift */; };
+		B67AE7C12B9ABC0A007DC30B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67AE7C02B9ABC09007DC30B /* Item.swift */; };
+		B67AE7C32B9ABC83007DC30B /* ItemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67AE7C22B9ABC83007DC30B /* ItemsViewModel.swift */; };
+		B67AE7C72B9ABD3F007DC30B /* NetworkFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67AE7C62B9ABD3F007DC30B /* NetworkFetch.swift */; };
+		B6A5EBFD2B9AC7E800CB9443 /* ItemsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A5EBFC2B9AC7E700CB9443 /* ItemsListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +41,11 @@
 		B67AE7972B9AB600007DC30B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B67AE79A2B9AB600007DC30B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B67AE7A02B9AB600007DC30B /* Fetch_TakeHome_AssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Fetch_TakeHome_AssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B67AE7A42B9AB600007DC30B /* Fetch_TakeHome_AssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fetch_TakeHome_AssignmentTests.swift; sourceTree = "<group>"; };
 		B67AE7AA2B9AB600007DC30B /* Fetch_TakeHome_AssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Fetch_TakeHome_AssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B67AE7AE2B9AB600007DC30B /* Fetch_TakeHome_AssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fetch_TakeHome_AssignmentUITests.swift; sourceTree = "<group>"; };
-		B67AE7B02B9AB600007DC30B /* Fetch_TakeHome_AssignmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fetch_TakeHome_AssignmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B67AE7C02B9ABC09007DC30B /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		B67AE7C22B9ABC83007DC30B /* ItemsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewModel.swift; sourceTree = "<group>"; };
+		B67AE7C62B9ABD3F007DC30B /* NetworkFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFetch.swift; sourceTree = "<group>"; };
+		B6A5EBFC2B9AC7E700CB9443 /* ItemsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				B67AE7922B9AB5FF007DC30B /* Fetch_TakeHome_Assignment */,
-				B67AE7A32B9AB600007DC30B /* Fetch_TakeHome_AssignmentTests */,
-				B67AE7AD2B9AB600007DC30B /* Fetch_TakeHome_AssignmentUITests */,
 				B67AE7912B9AB5FF007DC30B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +94,10 @@
 		B67AE7922B9AB5FF007DC30B /* Fetch_TakeHome_Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				B67AE7C82B9AC08B007DC30B /* Views */,
+				B67AE7C52B9ABD2C007DC30B /* Services */,
+				B67AE7BF2B9ABB5E007DC30B /* ViewModels */,
+				B67AE7BE2B9ABB55007DC30B /* Models */,
 				B67AE7932B9AB5FF007DC30B /* Fetch_TakeHome_AssignmentApp.swift */,
 				B67AE7952B9AB5FF007DC30B /* ContentView.swift */,
 				B67AE7972B9AB600007DC30B /* Assets.xcassets */,
@@ -110,21 +114,36 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		B67AE7A32B9AB600007DC30B /* Fetch_TakeHome_AssignmentTests */ = {
+		B67AE7BE2B9ABB55007DC30B /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B67AE7A42B9AB600007DC30B /* Fetch_TakeHome_AssignmentTests.swift */,
+				B67AE7C02B9ABC09007DC30B /* Item.swift */,
 			);
-			path = Fetch_TakeHome_AssignmentTests;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		B67AE7AD2B9AB600007DC30B /* Fetch_TakeHome_AssignmentUITests */ = {
+		B67AE7BF2B9ABB5E007DC30B /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				B67AE7AE2B9AB600007DC30B /* Fetch_TakeHome_AssignmentUITests.swift */,
-				B67AE7B02B9AB600007DC30B /* Fetch_TakeHome_AssignmentUITestsLaunchTests.swift */,
+				B67AE7C22B9ABC83007DC30B /* ItemsViewModel.swift */,
 			);
-			path = Fetch_TakeHome_AssignmentUITests;
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B67AE7C52B9ABD2C007DC30B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B67AE7C62B9ABD3F007DC30B /* NetworkFetch.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B67AE7C82B9AC08B007DC30B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B6A5EBFC2B9AC7E700CB9443 /* ItemsListView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +277,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B67AE7962B9AB5FF007DC30B /* ContentView.swift in Sources */,
+				B6A5EBFD2B9AC7E800CB9443 /* ItemsListView.swift in Sources */,
+				B67AE7C32B9ABC83007DC30B /* ItemsViewModel.swift in Sources */,
+				B67AE7C72B9ABD3F007DC30B /* NetworkFetch.swift in Sources */,
+				B67AE7C12B9ABC0A007DC30B /* Item.swift in Sources */,
 				B67AE7942B9AB5FF007DC30B /* Fetch_TakeHome_AssignmentApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +289,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B67AE7A52B9AB600007DC30B /* Fetch_TakeHome_AssignmentTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +296,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B67AE7B12B9AB600007DC30B /* Fetch_TakeHome_AssignmentUITestsLaunchTests.swift in Sources */,
-				B67AE7AF2B9AB600007DC30B /* Fetch_TakeHome_AssignmentUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +375,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -410,6 +431,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -425,6 +447,8 @@
 				DEVELOPMENT_TEAM = 54A43ZB7KT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Fetch_Assignment;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +478,8 @@
 				DEVELOPMENT_TEAM = 54A43ZB7KT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Fetch_Assignment;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
